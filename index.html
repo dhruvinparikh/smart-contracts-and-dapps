@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Smart Contracts And Decentralised Applications</title>
+    <title>Introduction to Blockchain Security Practices</title>
 
     <meta name="author" content="Doug Hoyte">
 
@@ -44,59 +44,6 @@
       .two-column em {
         margin: 20px;
       }
-
-      .reveal .big-and-bold {
-        font-weight: bold;
-        font-size: 135%;
-      }
-
-      .reveal .shrunk-a-bit {
-        font-size: 90%;
-      }
-
-      .reveal .shrunk-a-bit pre {
-        width: 100%;
-      }
-
-      .reveal pre {
-        width: 100%;
-      }
-
-      .reveal .highlight {
-        color: yellow;
-        font-weight: bold;
-      }
-
-      .reveal .highlightRed {
-        color: red;
-        font-weight: bold;
-      }
-
-      .reveal .highlightGreen {
-        color: green;
-        font-weight: bold;
-      }
-
-      .left {
-        left:-8.33%;
-        text-align: left;
-        float: left;
-        width:50%;
-        z-index:-10;
-      }
-
-      .right {
-        left:31.25%;
-        top: 75px;
-        text-align: left;
-        float: right;
-        z-index:-10;
-        width:50%;
-      }
-
-      .smallCode pre code {
-        font-size: 80%;
-      }
     </style>
   </head>
 
@@ -110,7 +57,7 @@
 
 <section data-markdown><script type="text/template">
 
-## Smart Contracts And Decentralised Applications
+## Smart Contracts and Decentralised Applications
 
 *Dhruvin Parikh, April 2020*
 
@@ -118,107 +65,41 @@
 
 <section data-markdown><script type="text/template">
 
-## The original peer-to-peer app
+## Agenda
 
-<img src="straight.jpg" style="background-color: white" />
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Radio
-
-* Once people started using telegraph over the radio, there was a need to coordinate
-* Large range of possible frequencies
-  * How do you find somebody to communicate with?
-  * How do you share the bandwidth with others?
+* Lesson plan for Week - 3 (On-campus class)
+* Lesson plan for Week - 4 (Virtual class)
 
 </script></section>
 
-<section data-markdown class="smallCode"><script type="text/template">
-
-## 15 minute break
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Why decentralize?
-
-* Eliminate Single Points of Failure
-  * If everyone relies on a centralized service, everyone loses service if it breaks or goes away
-* Diffuse control
-  * Absolute power corrupts absolutely
-  * Better to give large numbers of people little bits of power
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Meanings of decentralization
-
-* Architectural decentralization
-  * Many computers instead of one
-* Political decentralization
-  * Many people controlling the system
-* Logical decentralization
-  * Many different variations of protocols or data
-    * Blockchains are logically *centralized*
-
-</script></section>
-
-<section data-markdown class="smallCode"><script type="text/template">
-
-## web3/dapps
-
-* Concept for a semi-decentralized application
-* Usually uses normal URLs, but your identity and authorization is isolated from the websites
-* The blockchain is used as a back-end
-  * But: Most dapps use a normal back-end as well
-  * Large amounts of data can be verified by merkle trees
-
-</script></section>
-
-<section>
-
-<p data-markdown>
-## Metamask
-</p>
-
-<div class="left">
-    <img src="metamask.jpg" style="float: left; border:0px; background-color: white" />
-</div>
-
-<div class="right"><p data-markdown>
-* Browser extension: webapps cannot access your private keys
-* Browser needs to request your permission for various actions
-</p></div>
-
+<section data-background-iframe="https://dhruvinparikh93.github.io/#about"data-background-interactive>
+          <div
+            style="
+              position: absolute;
+              width: 40%;
+              right: 0;
+              box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
+                0 5px 25px rgba(0, 0, 0, 0.2);
+              background-color: rgba(0, 0, 0, 0.9);
+              color: #fff;
+              padding: 5px;
+              font-size: 20px;
+              text-align: center;
+            "
+          >
+            <h2>About The Presenter</h2>
+          </div>
 </section>
 
-<section data-markdown><script type="text/template">
 
-## Exercise: Secure Scuttlebutt
-
-* "Scuttlebutt" is a sailing term for gossip and socializing
-* SSB is decentralized social media
-* Download and install patchwork: [https://www.scuttlebutt.nz/](https://www.scuttlebutt.nz/)
-  * It will try to connect to friends on your local network, no servers needed
-  * You can add "pubs" which are federated internet servers that let you keep in touch later
-
-</script></section>
-
-<section data-markdown class="smallCode"><script type="text/template">
-
-## 15 minute break
-
-</script></section>
 
 <section data-markdown><script type="text/template">
 
 ## End of lesson
 
 </script></section>
+
+
 
 <!------------------------------------------------------->
 
@@ -243,7 +124,7 @@
         transition: 'none', // none/fade/slide/convex/concave/zoom
 
 	math: {
-          mathjax: '../lib/MathJax/MathJax.js',
+          mathjax: './lib/MathJax/MathJax.js',
           config: 'TeX-AMS_SVG-full',
 	},
 
@@ -253,8 +134,8 @@
           { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: './reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: './reveal.js/plugin/math/math.js', async: true },
-          // Zoom in and out with Alt+click
-		      { src: './reveal.js/plugin/zoom-js/zoom.js', async: true },
+           // Zoom in and out with Alt+click
+           { src: "./reveal.js/plugin/zoom-js/zoom.js", async: true },
         ]
       });
 
