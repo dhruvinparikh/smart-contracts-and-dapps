@@ -57,45 +57,233 @@
 
 <section data-markdown><script type="text/template">
 
-## Smart Contracts and Decentralised Applications
+### CSBC2010 - Smart Contracts and Decentralised Applications
+
+#### Developing a smart contract
 
 *Dhruvin Parikh, April 2020*
 
 </script></section>
 
-<section data-markdown><script type="text/template">
-
-## Agenda
-
-* Lesson plan for Week - 3 (On-campus class)
-* Lesson plan for Week - 4 (Virtual class)
-
-</script></section>
-
 <section data-background-iframe="https://dhruvinparikh93.github.io/#about"data-background-interactive>
-          <div
-            style="
-              position: absolute;
-              width: 40%;
-              right: 0;
-              box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
-                0 5px 25px rgba(0, 0, 0, 0.2);
-              background-color: rgba(0, 0, 0, 0.9);
-              color: #fff;
-              padding: 5px;
-              font-size: 20px;
-              text-align: center;
-            "
-          >
-            <h2>About The Presenter</h2>
-          </div>
+  <div
+    style="
+      position: absolute;
+      width: 40%;
+      right: 0;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
+        0 5px 25px rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.9);
+      color: #fff;
+      padding: 5px;
+      font-size: 20px;
+      text-align: center;
+    "
+  >
+    <h2>About The Presenter</h2>
+  </div>
 </section>
 
+<section>
+  <h2>Class Plan</h2>
+  <ul>
+    <li><a href="#/course-description">Course Description</a></li>
+    <li><a href="#/learning-outcome">Learning Outcome</a></li>
+    <li><a href="#/course-outline">Course Outline</a></li>
+    <li><a href="#/evaluation">Evaluation</a></li>
+    <li><a href="#/lesson-plan">Lesson Plan</a></li>
+    <li><a href="#/objectives">Objectives</a></li>
+    <li><a href="#/resources">Resources</a></li>
+    <li><a href="#/precap">Precap</a></li>
+  </ul>
+</section>
 
+<section id="course-description">
+  <h2>Course Description</h2>
+  <section data-transition="slide">
+    <ul>
+      <li>
+        It will cover designing, coding, execution and deployment of the smart contract - 
+        the computational element of the blockchain technology. Foundational concepts of 
+        Solidity programming language will be covered.
+      </li>
+      <li>
+        In addittion, this course will also cover value types, data strutures, global variables and basic functions.
+        It features best practices to design and develop a smart contract in solidity language using REMIX development environment.
+      </li>
+    </ul>
+  </section>
+  <section data-transition="slide">
+    <ul>
+      <li>
+        Designing and developement of end-to-end decentralised applications having most utilization of 
+        blockchain's feature and service by using industry standard tools like truffle and Metamask.
+      </li>
+      <li>
+        Students will learn basic design of dapp, truffle development process, test driven development of dapp, dapp application
+        models and emerging standards that are essential for predictable for behaviour.
+      </li>
+    </ul>
+  </section>
+</section>
+
+<section id="learning-outcome">
+  <h2>Learning outcome</h2>
+  <section data-transition="slide" >
+    <ul>
+      <li>
+        Understand appropriate data types, data structures and global variables available in solidity 
+      </li>
+      <li>
+        Declare functions and interact with deployed contract through Remix IDE. 
+      </li>
+      <li>
+        Analyze a given use case and design a smart-contract based solution
+      </li>
+    </ul>
+  </section>
+  <section data-transition="slide">
+    <ul>
+      <li>
+        Understand the architecture of the decentralized application
+      </li>
+      <li>
+        Learn how to design an application and make it decentralised
+      </li>
+      <li>
+        Design and implement a decentralised application in a given use case.
+      </li>
+    </ul>
+  </section>
+</section>
+
+<section id="course-outline">
+  <h2>Course Outline (Smart Contracts)</h2>
+    <p class="fragment shrink">Introduction to Smart Contracts</p>
+    <p class="fragment shrink">Solidity</p>
+    <p class="fragment grow">Developing a smart contract</p>
+    <p class="fragment slide-in fade-out">Evaluation and best practices for smart contract.</p>
+</section>
+
+<section>
+  <h2>Evaluation</h2>
+  <p>TBD</p>
+</section>
+
+<section id="lesson-plan">
+  <h2>Developing a smart contract</h2>
+</section>
+
+<section>
+  <h2>Analyze the problem</h2>
+    <ul>
+      <li>state variables and its visibility</li>
+      <li>functions and its visibility</li>
+      <li>access modifiers</li>
+      <li>Validation of input params in the function</li>
+    </ul>
+</section>
+
+<section id="objectives">
+  <h2>Objectives</h2>
+  <ul>
+    <li>
+      Apply concepts learned in last lessons to write a smart contract
+    </li>
+    <li>
+      Analyze a problem statement to implement and design a smart contract.
+    </li>
+    <li>
+      Program smart contract using solidity language and Remix IDE
+    </li>
+  </ul>
+</section>
+
+<section id="resources">
+  <h2>Resources</h2>
+  <ul>
+    <li>Class diagram - <a href="https://draw.io" target="_blank" >Draw.io</a> </li>
+    <li>Smart Contract IDE - <a href="https://remix.ethereum.org/">Remix</a></li>
+    <li>Language - <a href="https://solidity.readthedocs.io/en/v0.6.6/">Solidity v0.6.6</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Problem Statement (Ballot Contract) </h2>
+  <ul>
+    <li>A chairperson organizes this process</li>
+    <li>Number of proposals is specified at the time of creation of the smart contract</li>
+    <li>Chairperson registers all the voters</li>
+    <li>Voters including the chairperson vote on the proposal</li>
+    <li>Weight of two for the chairperson's vote</li>
+    <li>Winning proposal is determined and announced to the world</li>
+  </ul>
+</section>
+
+<section>
+  <h2>DEMO</h2>
+</section>
+
+<section>
+  <h2>Activity</h2>
+</section>
+
+<section>
+  <h2>Precap</h2>
+</section>
+
+<section>
+  <h2>Week 4 Day 1</h2>
+  <p>Events</p>
+  <ul>
+    <li>
+      Concept of event
+    </li>
+    <li>
+      Pushing event to a subscribed listener
+    </li>
+    <li>
+      Demonstrate the event using ballot example
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Week 4 Day 2</h2>
+  <p>Time-elements</p>
+  <ul>
+    <li>
+      Add stages and time duration of stages to ballot contract in previous session
+    </li>
+    <li>
+      Add required logic to modify the stages in the function
+    </li>
+  </ul>
+</section>
+
+<section data-markdown><script type="text/template">
+  ## Week 4 Day 3
+  ### Exception handling
+  * Concept of reverting a transaction.</li>
+  * Error handling using `require`, `revert` and `assert`.
+</script></section>
+
+<section>
+  <h2>Week 4 Day 3</h2>
+  <p>Auditing a smart contract</p>
+  <ul>
+    <li>
+      Importance of smart contract audit
+    </li>
+    <li>
+      Review of smart contract analysis tools and best practices
+    </li>
+  </ul>
+</section>
 
 <section data-markdown><script type="text/template">
 
-## End of lesson
+## End
 
 </script></section>
 
