@@ -1,6 +1,6 @@
 # Smart contracts And Decentralised Applications
 
-Course Link -> https://dhruvinparikh93.github.io/smart-contracts-and-dapps
+Course Link -> https://dhruvinparikh.github.io/smart-contracts-and-dapps
 
 ## Resources
 
