@@ -9,10 +9,10 @@
     <div>Deploy the <code>CoinFlipGame</code> contract below. Make sure to send an initial value of ETH in when you deploy it. Try to make a few bets and see if you win or lose.</div>
     
     <pre>
-    pragma solidity ^0.6.6;
+    pragma solidity ^0.8.4;
     
     contract CoinFlipGame {
-        constructor() public payable {
+        constructor() payable {
         }
         
         event LogWin(uint256 amount);
